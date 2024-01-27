@@ -8,8 +8,7 @@ function App() {
 
   return (
     <>
-      <div>Hello</div>
-      <div>Test</div>
+      <div className="text-white font-extrabold text-5xl font-gotham text-center pt-5">ZENCHAT</div>
     </>
   )
 }
