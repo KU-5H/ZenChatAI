@@ -1,23 +1,27 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import './Functions/CheckList'
+import Checkbox from './Functions/CheckList'
 
 function App() {
   const [count, setCount] = useState(0)
+
+  
 
   return (
     <>
       <div className="text-white font-bold text-5xl text-center pt-5 font-roboto">ZENCHAT</div>
 
+      <div id='output-text'></div>
 
-      <label for="myTextBox" className="text-white">Chat with AI: </label>
-      <input className="border rounded-lg border-1 border-white border-solid bg-transparent text-white"  
-      type="text" id="myTextBox" name="myTextBox" size = "100" placeholder="Enter Text Here" readonly></input>
-      
-
+      <div class="flex justify-center gap-5 h-30 fixed left-0 bottom-0 w-full text-white p-5">
+        <input className="min-w-0 px-5 py-3 border rounded-3xl border-white bg-transparent text-white transition duration-100 hover:shadow-md hover:scale-105" type="text" id="myTextBox" name="myTextBox" size="100" placeholder="Enter Your Thoughts Here" readonly />
+        <Checkbox />
+      </div>
     </>
   )
 }
+
+
 
 export default App
