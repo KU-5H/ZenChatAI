@@ -1,0 +1,12 @@
+.userInput {
+    text-align: right;
+}
+
+.pcInput {
+    text-align: left;
+}
+
+body {
+    font-family: 'Helvetica', Arial, sans-serif;
+    /* You can add more fallback fonts if the primary one is not available */
+  }

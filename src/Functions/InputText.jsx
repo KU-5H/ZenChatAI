@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import TextGeneration from './TextGeneration';
 import '../App.css'
+import mentalHealthPrompts from './mentalPrompts';
+import mentalHealthWords from './mentalWords';
+import axios from 'axios';
 
 
 export default function InputText() {
@@ -23,16 +26,30 @@ export default function InputText() {
     function addToChat() {
         const userInput = document.createElement('div');
         userInput.innerHTML = inputValue;
-        userInput.classList.add('userInput');
-
-        chatGPTGeneration();
+        userInput.className = 'text-right p3';
         
         const message = document.querySelector('#messages');
         message.appendChild(userInput);
+
+        chatGPTGeneration(true)
+
     }
 
-    const chatGPTGeneration = () => {
+    const chatGPTGeneration = (operate) => {
+        const randomIndex = Math.floor(Math.random() * mentalHealthPrompts.length);
+        const option = mentalHealthPrompts[randomIndex];
+        
+        
+        const pcInput = document.createElement('div');
+        if(operate) {
+            pcInput.innerHTML = option;
+        } else {
+            pcInput.innerHTML = "Sorry, that dosen't really have to do with Mental Health. Please try a different prompt";
+        }
+        pcInput.className = 'text-left p-3';
 
+        const message = document.querySelector('#messages');
+        message.appendChild(pcInput);
     }
 
     return (

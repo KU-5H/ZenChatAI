@@ -1,0 +1,36 @@
+{
+  "questions": [
+    {
+      "question": "Hello",
+      "answer": "Nice to Meet You!"
+    },
+    {
+      "question": "I'm sad",
+      "answer": "Cheer up! There are better days ahead!"
+    },
+    {
+      "question": "What should I do when I'm hurt",
+      "answer": "You should talk to them about it."
+    },
+    {
+      "question": "Happy",
+      "answer": "Congrats!"
+    },
+    {
+      "question": "I'm not feeling well. What should I do?",
+      "answer": "You should start by trying to go outside and getting some fresh air."
+    },
+    {
+      "question": "& C:/Users/TimelesS/AppData/Local/Microsoft/WindowsApps/python3.10.exe c:/Users/TimelesS/repos/ZenChatAi/Python/chatbot.py",
+      "answer": "delete"
+    },
+    {
+      "question": "l",
+      "answer": ""
+    },
+    {
+      "question": "What's up!",
+      "answer": "How are you!"
+    }
+  ]
+}
