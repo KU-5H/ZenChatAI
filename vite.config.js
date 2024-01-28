@@ -7,4 +7,7 @@ export default defineConfig({
       include: "**/*.jsx",
     }),
   ],
+  optimizeDeps: {
+    exclude: ['js-big-decimal']
+  },
 });
