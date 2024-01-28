@@ -2,8 +2,6 @@ import React, { useState } from 'react';
 import TextGeneration from './TextGeneration';
 import '../App.css'
 
-const API_KEY = "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"
-
 
 export default function InputText() {
 
